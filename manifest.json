@@ -1,0 +1,41 @@
+{
+  "name": "U R:United Resume!",
+  "description": "우리의 소원은 이력서 통일!",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "declarativeContent", 
+    "storage",
+    "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": [
+        "js/background/backgroundtest.js"
+    ],
+    "persistent": false
+  },
+
+  "options_ui": {
+    "page": "views/list.html",
+    "chrome_style": false,
+    "open_in_tab": true
+  },
+
+  "page_action": {
+    "default_popup": "views/testpopup.html",
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+  },
+
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  }
+}
